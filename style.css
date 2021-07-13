@@ -59,7 +59,8 @@ header img {
 
 .palyer_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, 340px);
+  justify-content: center;
   padding: 50px 10%;
 }
 
@@ -85,7 +86,7 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.452), rgba(0, 0, 0, 0.884)),
     url("./images/match_06.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,6 +102,7 @@ header img {
 .video_container img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .video_container .btn {
@@ -231,4 +233,40 @@ footer .social_icons a:nth-child(4):hover {
   background-color: #ff0000;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   color: white;
+}
+
+/* media quary */
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 25px 0;
+  }
+
+  header h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  header img {
+    width: 330px;
+  }
+
+  .latest_video {
+    flex-direction: column;
+    height: 1000px;
+    padding: 90px 0;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.685),
+        rgba(88, 88, 88, 0.685)
+      ),
+      url("./images/match_06.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .video_container{
+      width: 90%;
+  }
 }
