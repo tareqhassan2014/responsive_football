@@ -254,7 +254,7 @@ footer .social_icons a:nth-child(4):hover {
 
   .latest_video {
     flex-direction: column;
-    height: 1000px;
+    height: 700px;
     padding: 90px 0;
     background: linear-gradient(
         rgba(255, 255, 255, 0.685),
@@ -268,5 +268,14 @@ footer .social_icons a:nth-child(4):hover {
 
   .video_container{
       width: 90%;
+  }
+
+  .video_cart_container .video_cart img {
+    width: 100px;
+  }
+
+  .video_cart_container .video_cart p {
+    margin-top: 10px;
+    color: white;
   }
 }
