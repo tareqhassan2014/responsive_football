@@ -41,7 +41,20 @@ header .btn {
   border: none;
   outline: none;
   cursor: pointer;
+  animation: letsZoom 3s linear alternate-reverse infinite; 
 }
+
+@keyframes letsZoom {
+  from{
+    transform: scale(0.9);
+    border-radius: 0px;
+  }
+  to{
+    transform: scale(1);
+    border-radius: 10px;
+  }
+}
+
 
 header a {
   font-weight: 500;
@@ -234,6 +247,67 @@ footer .social_icons a:nth-child(4):hover {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   color: white;
 }
+
+
+/* ------------------- our 7th section social media css style 
+------------------------------------ */
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.icon-bar a {
+  width: 300px;
+  background: #3b5999;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 17px;
+  padding: 0.5rem;
+  transition: all 0.5s linear;
+  transform: translateX(-250px);
+}
+
+.icon-bar a:hover {
+  transform: translateX(0);
+}
+
+.icon-bar a .fab {
+  padding-left: 16px;
+  font-size: 30px;
+  animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+
+.icon-bar .twitter {
+  background: #00aced;
+}
+
+.icon-bar .instagram {
+  background: #e4405f;
+}
+
+.icon-bar .youtube {
+  background: #cd201f;
+}
+
+.icon-bar .linkedin {
+  background: #0077b5;
+}
+
+
 
 /* media quary */
 
